@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html>
-    <title>
-        Personal Portfolio
-    </title>
+<html>    
     <head>
+        <title>Personal Portfolio</title>
+
+        <!-- CSS -->
         <link rel="stylesheet" href="css/style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     </head>
     <body>
         <header class="header">
             <a href="#" class="logo">Portfolio</a>
-            <i  class='bx bx-menu-alt-left' id="menu-icon"></i>
+            <!-- <i  class='bx bx-menu-alt-left' id="menu-icon"></i> -->
+            <div id="toggle">
+              <div class="one"></div>
+              <div class="two"></div>
+              <div class="three"></div>
+            </div>
             <nav class="navbar">
                 <a href="#home" class="acitve">Home</a>
                 <a href="#education">Education</a>
@@ -30,12 +34,12 @@
                     <a href="https://www.facebook.com/prathit.panchal.3" target="_blank"><i class='bx bxl-facebook' ></i></a>
                     <a href="https://twitter.com/panchal_prathit" target="_blank"><i class='bx bxl-twitter'></i></a>
                     <a href="https://www.instagram.com/prathitpanchal?igsh=MXdvMnNlOXJzMzJ6aA%3D%3D&utm_source=qr" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
-                    <a href="https://www.linkedin.com/in/prathit-panchal-2b9014275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://www.linkedin.com/in/prathit-panchal-2b9014275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"target="_blank"><i class='bx bxl-linkedin'></i></a>
                 </div>
-                <a href="https://docs.google.com/document/d/1u5N1vpmaxwENXQJ5osR5vKK-yJWrtm4qVBHi92HjzqI/edit?usp=sharing" target="_blank" class="btn">Download CV</a>
+                <a href="https://docs.google.com/document/d/1u5N1vpmaxwENXQJ5osR5vKK-yJWrtm4qVBHi92HjzqI/edit?usp=sharing" class="btn" target="_blank">Download CV</a>
             </div>
             <div class="home-img">
-                <img src="images/Screenshot 2024-04-10 at 1.43.01 AM.png">
+                <img src="images/Screenshot-2024-04-10.png">
             </div>
         </section>
 
@@ -53,36 +57,36 @@
         </section>
 
         <section class="skills" id="skills">
-            <h2 class="heading">My <span>Skills</span></h2>
-            <div class="skills-container">
+            <div class="Content">
+                <h2 class="heading">My <span>Skills</span></h2>
+                <div class="skills-container">
 
-                <div class="skills-box">
-                    <i class='bx bx-code-alt'></i>
-                    <h3>Web Development</h3>
-                    <p>I have designed many webpages till now and have knowledge about HTML CSS Javascript and React based Webpages <br> <br> </p>
-                    <a href="https://en.wikipedia.org/wiki/Web_development" class="btn" target="_blank">Read More</a>
-                </div>
+                    <div class="skills-box">
+                        <i class='bx bx-code-alt'></i>
+                        <h3>Web Development</h3>
+                        <p>I have designed many webpages till now and have knowledge about HTML CSS Javascript and React based Webpages <br> <br> </p>
+                        <a href="https://en.wikipedia.org/wiki/Web_development" class="btn" target="_blank">Read More</a>
+                    </div>
 
-                <div class="skills-box">
-                    <i class='bx bxl-apple' ></i>
-                    <h3>iOS App Development</h3>
-                    <p>I have designed an iOS based quiz app on the famous movie series Harry Porter and have basic knowledge in developing apps on Xcode</p>
-                    <a href="https://developer.apple.com/tutorials/app-dev-training/" class="btn" target="_blank">Read More</a>
-                </div>
-                <div class="skills-box">
-                    <i class='bx bxl-java'></i><i class='bx bxl-python' ></i><i class='bx bxl-c-plus-plus' ></i>
-                    <h3>Object Oriented Programming</h3>
-                    <p>I have designed many Object Oriented Programs in Java,Python and C++ <br> <br> <br></p>
-                    <a href="https://en.wikipedia.org/wiki/Object-oriented_programming" class="btn" target="_blank">Read More</a>
+                    <div class="skills-box">
+                        <i class='bx bxl-apple' ></i>
+                        <h3>iOS App Development</h3>
+                        <p>I have designed an iOS based quiz app on the famous movie series Harry Porter and have basic knowledge in developing apps on Xcode</p>
+                        <a href="https://developer.apple.com/tutorials/app-dev-training/" class="btn" target="_blank">Read More</a>
+                    </div>
+                    <div class="skills-box">
+                        <i class='bx bxl-java'></i><i class='bx bxl-python' ></i><i class='bx bxl-c-plus-plus' ></i>
+                        <h3>Object Oriented Programming</h3>
+                        <p>I have designed many Object Oriented Programs in Java,Python and C++ <br> <br> <br></p>
+                        <a href="https://en.wikipedia.org/wiki/Object-oriented_programming" class="btn" target="_blank">Read More</a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="projects" id="projects">
             <h2 class="heading">Latest <span>Projects</span></h2>
-
             <div class="projects-container">
-
                 <div class="projects-box">
                     <img src="images/harryporter.jpeg">
                     <div class="projects-layer">
@@ -106,7 +110,7 @@
                     <div class="projects-layer">
                         <h4>Calculator - Web App</h4>
                         <p>I made a simple calculator which would calculate the problems and give resluts accordingly</p>
-                        <a href="https://prathit22bce0538.github.io/calculator/" target="_blank"><i class='bx bx-link-external'></i></a>
+                         <a href="https://prathit22bce0538.github.io/calculator/" target="_blank"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
                 
@@ -136,38 +140,48 @@
                         <a href="https://drive.google.com/file/d/1xuoRm1TJ9z12X5kB0tQfeeQdjkyqzF7M/view?usp=share_link" target="_blank"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
-
             </div>
         </section>
 
         <section class="contact" id="contact">
-            <h2 class="heading">Contact <span>Me!</span></h2>
-
-            <form action="#">
-
-                <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email Address">
-                </div>
-
-                <div class="input-box">
-                    <input type="number" placeholder="Mobile Number">
-                    <input type="text" placeholder="Email Subject">
-                </div>
-                
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </form>
+            <div class="contact_Content">
+                <h2 class="heading">Contact <span>Me!</span></h2>
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" placeholder="Full Name">
+                        <input type="email" placeholder="Email Address">
+                    </div>
+                    <div class="input-box">
+                        <input type="number" placeholder="Mobile Number">
+                        <input type="text" placeholder="Email Subject">
+                    </div>                
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                </form>
+            </div>    
         </section>
 
         <footer class="footer">
             <div class="footer-text">
-                <p>Copyright &copy; 2024 by Prathit Panchal | All Rights Reserved.</p>
+                <p>&copy; 2024 by Prathit Panchal | All Rights Reserved.</p>
             </div>
             <div class="footer-iconTop">
                 <a href="#home"><i class='bx bxs-up-arrow-circle'></i></a>
             </div>
         </footer>
+
+        <!-- JS -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script src="js/script.js"></script>
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        <script type="text/javascript">            
+            $( document ).ready(function() {
+                $("#toggle").click(function() {
+                  $(this).toggleClass("on");
+                  $(".navbar").slideToggle();
+                });
+            });
+        </script>
+
     </body>
 </html>
