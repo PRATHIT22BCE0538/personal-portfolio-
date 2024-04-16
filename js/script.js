@@ -21,7 +21,7 @@ header.classList.toggle('sticky',window.scrollY>100);
 };  
 
 window.onload = () => {
-    // Initialize ScrollReveal properly
+   
     ScrollReveal({
         reset: true,
         distance: '80px',
